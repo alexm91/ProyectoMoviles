@@ -3,6 +3,7 @@ package com.example.alebu.proyectomoviles;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -22,6 +23,7 @@ public class ListaRutas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_rutas);
+
         listaRutas = (ListView) findViewById(R.id.listRutas);
         loadListaRutas();
         adapter = new ArrayAdapter<Ruta>(getApplicationContext(),R.layout.support_simple_spinner_dropdown_item, infoRuta);
@@ -31,6 +33,7 @@ public class ListaRutas extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int selecion, long l) {
                 abrirPopUp(view, infoRuta[selecion]);
+                Log.i("Objeto",infoRuta[selecion].toString());
             }
         });
 

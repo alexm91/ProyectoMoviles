@@ -28,10 +28,10 @@ public class InfoRuta extends AppCompatActivity {
 
         Ruta objRuta = (Ruta) getIntent().getExtras().getSerializable("ruta");
         nombreRuta.setText(objRuta.getNombreRuta());
-        cooperativa.setText(objRuta.getNombreRuta());
-        nombreRuta.setText(objRuta.getNombreRuta());
-        nombreRuta.setText(objRuta.getNombreRuta());
-        nombreRuta.setText(objRuta.getNombreRuta());
+        cooperativa.setText(objRuta.getCooperativa());
+        salida.setText(objRuta.getSalida());
+        llegada.setText(objRuta.getLlegada());
+        tiempoBus.setText(objRuta.getTiempoBus());
 
 
     }
