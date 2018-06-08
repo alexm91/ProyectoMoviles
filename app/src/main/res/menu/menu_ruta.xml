@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mapaR" android:title="Mostrar Mapa"/>
+    <item android:id="@+id/favorito" android:title="Anadir a Favoritos"/>
+    <item android:id="@+id/infoR" android:title="Detalles de la Ruta"/>
+</menu>
