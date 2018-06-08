@@ -21,6 +21,7 @@ public class ListaRutas extends AppCompatActivity {
     Ruta [] infoRuta;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_rutas);
 

@@ -20,6 +20,7 @@ public class MainLogin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         SignInButton botongoogle = (SignInButton) findViewById(R.id.logeogmail);

@@ -21,6 +21,7 @@ public class ListaFavoritos extends AppCompatActivity {
     Ruta [] infoRuta;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_favoritos);
         listaRutas = (ListView) findViewById(R.id.listRutasGuardadas);

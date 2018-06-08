@@ -21,7 +21,6 @@
         <activity android:name=".ListaFavoritos" />
         <activity android:name=".InfoRuta" />
         <activity android:name=".MapaRuta" />
-        <activity android:name=".DetallesRutaActivity"></activity>
     </application>
 
 </manifest>

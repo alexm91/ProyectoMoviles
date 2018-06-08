@@ -13,6 +13,7 @@ public class Inicio extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_inicio);
         final Button rutas = (Button) findViewById(R.id.buttonRutasTodas);
         final Button rutasGuardadas = (Button) findViewById(R.id.buttonRutasGuardadas);
