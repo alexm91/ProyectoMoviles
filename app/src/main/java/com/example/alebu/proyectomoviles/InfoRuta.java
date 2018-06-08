@@ -19,11 +19,11 @@ public class InfoRuta extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_ruta);
 
-        nombreRuta = (TextView) findViewById(R.id.textView4);
-        cooperativa = (TextView) findViewById(R.id.textView5);
-        salida = (TextView) findViewById(R.id.textView6);
-        llegada = (TextView) findViewById(R.id.textView7);
-        tiempoBus = (TextView) findViewById(R.id.textView8);
+        nombreRuta = (TextView) findViewById(R.id.textViewNombreRuta);
+        cooperativa = (TextView) findViewById(R.id.textViewCooperativa);
+        salida = (TextView) findViewById(R.id.textViewSalida);
+        llegada = (TextView) findViewById(R.id.textViewLlegada);
+        tiempoBus = (TextView) findViewById(R.id.textViewTiempo);
 
 
         Ruta objRuta = (Ruta) getIntent().getExtras().getSerializable("ruta");
