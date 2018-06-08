@@ -26,15 +26,16 @@ public class ListaRutas extends AppCompatActivity {
         loadListaRutas();
         adapter = new ArrayAdapter<Ruta>(getApplicationContext(),R.layout.support_simple_spinner_dropdown_item, infoRuta);
         listaRutas.setAdapter(adapter);
+
         listaRutas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
-                abrirPopUp(view, i);
+            public void onItemClick(AdapterView<?> adapterView, View view, int selecion, long l) {
+                abrirPopUp(view, infoRuta[selecion]);
             }
         });
 
     }
-    public void abrirPopUp(View view, final int j){
+    public void abrirPopUp(View view, final Ruta objRuta){
         PopupMenu popupInicio = new PopupMenu(this, view);
         popupInicio.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
@@ -48,8 +49,7 @@ public class ListaRutas extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Ruta Aniadida a Favoritos",Toast.LENGTH_LONG).show();
                         return true;
                     case R.id.infoR:
-                        Intent popUpInfo = new Intent(getApplicationContext(), InfoRuta.class);
-                        startActivity(popUpInfo);
+                        envioObjeto(objRuta);
                         return true;
                     default: return false;
                 }
@@ -65,4 +65,11 @@ public class ListaRutas extends AppCompatActivity {
                 new Ruta("Carapungo - Ecovia","Quitenio Libre","Carapungo","Ecovia Rio Coca","15 minutos"),
         };
     }
+
+    public void envioObjeto(Ruta objRuta){
+        Intent intent = new Intent(getApplicationContext(), InfoRuta.class);
+        intent.putExtra("ruta", objRuta);
+        startActivity(intent);
+    }
+
 }
