@@ -16,21 +16,12 @@ public class Inicio extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_inicio);
         final Button rutas = (Button) findViewById(R.id.buttonRutasTodas);
-        final Button rutasGuardadas = (Button) findViewById(R.id.buttonRutasGuardadas);
         final Button mapa = (Button) findViewById(R.id.buttonMapa);
         rutas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentRutas = new Intent(getApplicationContext(),ListaRutas.class);
                 startActivity(intentRutas);
-            }
-        });
-
-        rutasGuardadas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentRutasGuardadas = new Intent(getApplicationContext(),ListaFavoritos.class);
-                startActivity(intentRutasGuardadas);
             }
         });
 

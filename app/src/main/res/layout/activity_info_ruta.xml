@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#21618C"
     tools:context=".InfoRuta"
     tools:layout_editor_absoluteY="81dp">
 
@@ -13,6 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Detalles Ruta"
+        android:textColor="#FDFEFE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +27,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="35dp"
+        android:textColor="#FDFEFE"
         android:text="Nombre Ruta"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:textColor="#FDFEFE"
         android:text="Cooperativa"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
         app:layout_constraintStart_toEndOf="@+id/textView6"
@@ -45,6 +50,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="9dp"
+        android:textColor="#FDFEFE"
         android:text="Salida"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -55,6 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="11dp"
         android:layout_marginStart="11dp"
+        android:textColor="#FDFEFE"
         android:layout_marginTop="7dp"
         android:text="Llegada"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,6 +74,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
+        android:textColor="#FDFEFE"
         android:text="Tiempo de espera"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -79,6 +87,7 @@
         android:layout_marginLeft="102dp"
         android:layout_marginRight="102dp"
         android:layout_marginStart="102dp"
+        android:textColor="#FDFEFE"
         android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,6 +101,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
         android:layout_marginTop="10dp"
+        android:textColor="#FDFEFE"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="@+id/textViewNombreRuta"
         app:layout_constraintTop_toBottomOf="@+id/textViewNombreRuta" />
@@ -101,6 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="9dp"
+        android:textColor="#FDFEFE"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/textViewCooperativa"
         app:layout_constraintTop_toBottomOf="@+id/textViewCooperativa" />
@@ -110,6 +121,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
+        android:textColor="#FDFEFE"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/textViewSalida"
         app:layout_constraintTop_toBottomOf="@+id/textViewSalida" />
@@ -119,6 +131,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:textColor="#FDFEFE"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="@+id/textViewLlegada"
         app:layout_constraintTop_toBottomOf="@+id/textViewLlegada" />
